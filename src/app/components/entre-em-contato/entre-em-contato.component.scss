@@ -1,0 +1,41 @@
+form {
+  gap: 24px;
+  flex-direction: column;
+}
+
+h4 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.form-inputs {
+  padding: 0.75rem;
+  color: #4e4b59;
+  border-radius: 8px;
+  border: 3.5px solid #21252a;
+}
+
+.form .green-btn {
+  height: 54px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background: #21252a;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  button {
+    font-size: 20px;
+  }
+}
