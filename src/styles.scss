@@ -1,16 +1,33 @@
-html {
-  @media (max-width: 1080px) {
-    font-size: 93.75%;
-  }
-
-  @media (max-width: 720px) {
-    font-size: 87.5%;
-  }
-}
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
 
 body {
   -webkit-font-smoothing: antialiased;
   background: #fcfcfc;
+}
+
+.container-max-width {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container-max-width {
+    padding: 1rem;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-vcenter {
+  display: flex;
+  align-items: center;
 }
 
 .main-container {
