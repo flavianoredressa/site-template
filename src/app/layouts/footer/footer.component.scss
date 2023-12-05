@@ -1,0 +1,67 @@
+footer {
+  padding: 12px 0;
+  background: #21252a;
+}
+
+.logo   {
+  width: 170px;
+}
+
+p {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 12px;
+}
+
+.align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.icons img {
+  width: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 0;
+    position: relative;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .icons {
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons img {
+    width: 2.5rem;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .top {
+    right: 0;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.gap-30 {
+  gap: 30px;
+}
