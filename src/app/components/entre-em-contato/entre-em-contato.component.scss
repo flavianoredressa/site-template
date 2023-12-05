@@ -4,8 +4,8 @@ form {
 }
 
 h4 {
-  margin-bottom: 12px;
   font-size: 20px;
+  margin-bottom: 12px;
 }
 
 .form-inputs {
@@ -15,14 +15,12 @@ h4 {
   border: 3.5px solid #21252a;
 }
 
-.form .green-btn {
+.black-btn {
   height: 54px;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  border: none;
-  border-radius: 8px;
-  background: #21252a;
+}
+
+img {
+  max-height: 428px;
 }
 
 @media screen and (max-width: 767px) {
@@ -33,9 +31,5 @@ h4 {
   h4 {
     font-size: 16px;
     font-weight: 400;
-  }
-
-  button {
-    font-size: 20px;
   }
 }
