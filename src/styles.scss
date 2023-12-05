@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+.container-max-width {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container-max-width {
+    padding: 1rem;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-vcenter {
+  display: flex;
+  align-items: center;
+}
