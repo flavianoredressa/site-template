@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #fcfcfc;
+}
+
 .container-max-width {
   width: 1440px;
   margin: 0 auto;
@@ -21,4 +28,11 @@
 .flex-vcenter {
   display: flex;
   align-items: center;
+}
+
+.main-container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
