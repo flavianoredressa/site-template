@@ -1,0 +1,25 @@
+// .sidebar {
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   width: 15.625rem;
+//   margin-left: 0;
+//   z-index: 1032;
+//   -webkit-transition: all 0.25s ease;
+//   -moz-transition: all 0.25s ease;
+//   transition: all 0.25s ease;
+// }
+
+main {
+  // margin-left: 15.625rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+.toggle-main {
+  margin-left: 4.5rem !important;
+}
+
+.toggle-sidebar {
+  width: 4.5rem !important;
+}
