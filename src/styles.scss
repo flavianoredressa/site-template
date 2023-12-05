@@ -29,3 +29,18 @@ body {
   display: flex;
   align-items: center;
 }
+
+.black-btn {
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 8px;
+  background: #21252a;
+}
+
+@media screen and (max-width: 767px) {
+  .black-btn {
+    font-size: 18px !important;
+  }
+}
