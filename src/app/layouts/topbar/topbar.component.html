@@ -1,11 +1,14 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="#">Operative Tech</a>
+    <div class="navbar-brand">
+      <img src="assets/images/exemplo-logo2.png" alt="" />
+      <a class="navbar-brand" routerLink="/home">Operative</a>
+    </div>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item" *ngFor="let item of navItems">
-          <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+          <a class="nav-link" [routerLink]="item.url">{{ item.name }}</a>
         </li>
 
         <li class="nav-item align-self-center ms-3">
@@ -14,15 +17,27 @@
       </ul>
     </div>
 
-    <button class="navbar-toggler" type="button" (click)="open(content)">
-      <span class="navbar-toggler-icon"></span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="open(content)"
+      (mouseenter)="onMouseEnter()"
+      (mouseleave)="onMouseLeave()"
+    >
+      <i
+        class="fa-solid"
+        [ngClass]="{ 'fa-bars-staggered': !isHovered, 'fa-bars': isHovered }"
+      ></i>
     </button>
   </div>
 </nav>
 
 <ng-template #content let-offcanvas>
   <div class="offcanvas-header">
-    <h4 class="offcanvas-title" id="offcanvas-basic-title">Operative Tech</h4>
+    <div class="navbar-brand">
+      <img src="assets/images/exemplo-logo2.png" alt="" />
+      <a class="navbar-brand" routerLink="/home">Operative</a>
+    </div>
 
     <button
       type="button"
@@ -40,7 +55,7 @@
         <i *ngIf="item" class="{{ item.icon }}"></i>
         <a
           class="nav-link"
-          href="{{ item.url }}"
+          routerLink="{{ item.url }}"
           (click)="offcanvas.close(item.name)"
         >
           {{ item.name }}

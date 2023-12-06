@@ -1,11 +1,17 @@
-<div class="position-relative">
+<div class="layout-container">
   <!-- <div class="sidebar" [ngClass]="{ 'toggle-sidebar': isToggle }">
     <app-sidebar (toggleSidebar)="isToggle = !isToggle"></app-sidebar>
   </div> -->
 
   <main class="main-content" [ngClass]="{ 'toggle-main ': isToggle }">
-    <app-topbar (toggleSidebar)="isToggle = !isToggle"></app-topbar>
-    <router-outlet></router-outlet>
+    <div class="topbar-container" [ngClass]="{ 'topbar-black': isSticky }">
+      <app-topbar (toggleSidebar)="isToggle = !isToggle"></app-topbar>
+    </div>
+
+    <div class="outlet-container">
+      <router-outlet></router-outlet>
+    </div>
+
     <app-footer></app-footer>
   </main>
 </div>

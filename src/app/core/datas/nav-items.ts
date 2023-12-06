@@ -4,21 +4,21 @@ export const NavItems: Array<INavItem> = [
   {
     icon: 'fa-solid fa-ban',
     name: 'Section A',
-    url: '#',
+    url: '/home',
   },
   {
     icon: 'fa-solid fa-ban',
     name: 'Section B',
-    url: '#',
+    url: '/home',
   },
   {
     icon: 'fa-solid fa-ban',
     name: 'Section C',
-    url: '#',
+    url: '/home',
   },
   {
     icon: 'fa-solid fa-ban',
     name: 'Section D',
-    url: '#',
+    url: '/home',
   },
 ];

@@ -1,16 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component, TemplateRef } from '@angular/core';
+import { Component, HostListener, TemplateRef } from '@angular/core';
 import {
   NgbOffcanvas,
   NgbOffcanvasModule,
   OffcanvasDismissReasons,
 } from '@ng-bootstrap/ng-bootstrap';
 import { NavItems } from '../../core/datas/nav-items';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-topbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   providers: [NgbOffcanvasModule],
   templateUrl: './topbar.component.html',
   styleUrl: './topbar.component.scss',
@@ -18,6 +19,7 @@ import { NavItems } from '../../core/datas/nav-items';
 export class TopbarComponent {
   navItems = NavItems;
   closeResult = '';
+  isHovered = false;
 
   constructor(public offcanvas: NgbOffcanvas) {}
 
@@ -47,5 +49,13 @@ export class TopbarComponent {
       default:
         return `with: ${reason}`;
     }
+  }
+
+  onMouseEnter() {
+    this.isHovered = true;
+  }
+
+  onMouseLeave() {
+    this.isHovered = false;
   }
 }
