@@ -1,0 +1,23 @@
+:root {
+  --primary: #add000;
+  --secondary: #f4f4f4;
+  --tertiary: #003fbd;
+  --success: #66cb9f;
+  --info: #68dbf2;
+  --warning: #ff8052;
+  --danger: #f84a4e;
+  --text-dark: #000;
+  --light-gray: #f5f6f7;
+
+  --theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "text-dark": $text-dark,
+    "light-gray": $light-gray
+  );
+}
