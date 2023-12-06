@@ -1,32 +1,51 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="#">Operative</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/home">Home</a>
+    <a class="navbar-brand" href="#">Operative Tech</a>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item" *ngFor="let item of navItems">
+          <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/home">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/home">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/home">Contact</a>
+
+        <li class="nav-item align-self-center ms-3">
+          <button class="btn btn-sm btn-primary">Exemple button</button>
         </li>
       </ul>
     </div>
+
+    <button class="navbar-toggler" type="button" (click)="open(content)">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 </nav>
+
+<ng-template #content let-offcanvas>
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title" id="offcanvas-basic-title">Operative Tech</h4>
+
+    <button
+      type="button"
+      class="btn-unstyled close"
+      aria-label="Close"
+      (click)="offcanvas.dismiss('Cross click')"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="nav flex-column offcanvas-menu">
+      <li class="nav-item" *ngFor="let item of navItems">
+        <i *ngIf="item" class="{{ item.icon }}"></i>
+        <a
+          class="nav-link"
+          href="{{ item.url }}"
+          (click)="offcanvas.close(item.name)"
+        >
+          {{ item.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</ng-template>
