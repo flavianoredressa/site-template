@@ -4,7 +4,7 @@ body {
 }
 
 .container-max-width {
-  width: 1440px;
+  width: 90rem;
   margin: 0 auto;
   padding: 0 48px;
   max-width: 100%;
@@ -27,11 +27,19 @@ body {
   align-items: center;
 }
 
-.main-container {
-  max-width: 90rem;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
+.black-btn {
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 8px;
+  background: #21252a;
+}
+
+@media screen and (max-width: 767px) {
+  .black-btn {
+    font-size: 18px !important;
+  }
 }
 
 .btn-unstyled {
