@@ -1,28 +1,15 @@
-<div class="row p-0 m-0">
+<div class="row carousel-container">
   <div class="col-12 p-0">
     <swiper-container
-      class="mySwiper"
+      class="my-carousel"
       direction="horizontal"
       pagination="true"
       pagination-clickable="true"
       autoplay-delay="2500"
+      loop="true"
       autoplay-disable-on-interaction="false"
+      #swiper
     >
-      <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-      </swiper-slide>
-      <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-      </swiper-slide>
-      <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-      </swiper-slide>
-      <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-      </swiper-slide>
-      <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-      </swiper-slide>
       <swiper-slide>
         <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
       </swiper-slide>
@@ -36,5 +23,18 @@
         <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
       </swiper-slide>
     </swiper-container>
+  </div>
+
+  <div class="carousel-buttons-container">
+    <div
+      class="d-flex align-items-center justify-content-between carousel-buttons"
+    >
+      <button class="swiper-button" (click)="swiper.swiper.slidePrev()">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="swiper-button" (click)="swiper.swiper.slideNext()">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
   </div>
 </div>
