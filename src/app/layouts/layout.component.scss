@@ -1,25 +1,37 @@
-// .sidebar {
-//   position: fixed;
-//   top: 0;
-//   bottom: 0;
-//   width: 15.625rem;
-//   margin-left: 0;
-//   z-index: 1032;
-//   -webkit-transition: all 0.25s ease;
-//   -moz-transition: all 0.25s ease;
-//   transition: all 0.25s ease;
-// }
-
-main {
-  // margin-left: 15.625rem;
+.layout-container {
   position: relative;
-  min-height: 100vh;
-}
 
-.toggle-main {
-  margin-left: 4.5rem !important;
-}
+  main {
+    position: relative;
+    min-height: 100vh;
+  }
 
-.toggle-sidebar {
-  width: 4.5rem !important;
+  .toggle-main {
+    margin-left: 4.5rem !important;
+  }
+
+  .toggle-sidebar {
+    width: 4.5rem !important;
+  }
+
+  .topbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 0.0625rem solid transparent;
+    transition: background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  }
+
+  .topbar-black {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.3125rem);
+    -webkit-backdrop-filter: blur(0.3125rem);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+  }
+
+  .outlet-container {
+    margin-top: 4.125rem;
+  }
 }

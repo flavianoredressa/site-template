@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, HostListener, OnInit, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -15,6 +15,12 @@ import { EmitterEventService } from '../services/emitter-event.service';
 export class LayoutComponent implements OnInit {
   private emitterEvent = inject(EmitterEventService);
   isToggle = false;
+  isSticky = false;
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    this.isSticky = window.scrollY > 0;
+  }
 
   ngOnInit() {
     this.subscribeTop();
@@ -22,9 +28,7 @@ export class LayoutComponent implements OnInit {
 
   subscribeTop() {
     this.emitterEvent.subscrible('go-to-top', () => {
-      window.scrollTo({top: 0});
+      window.scrollTo({ top: 0 });
     });
   }
 }
-
-

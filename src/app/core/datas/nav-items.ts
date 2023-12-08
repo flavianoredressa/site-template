@@ -3,22 +3,22 @@ import { INavItem } from '../interfaces/nav-item.interface';
 export const NavItems: Array<INavItem> = [
   {
     icon: 'fa-solid fa-ban',
-    name: 'Section A',
-    url: '#',
+    name: 'Home',
+    url: '/home',
   },
   {
     icon: 'fa-solid fa-ban',
-    name: 'Section B',
-    url: '#',
+    name: 'Empresa',
+    url: '/home',
   },
   {
     icon: 'fa-solid fa-ban',
-    name: 'Section C',
-    url: '#',
+    name: 'Produtos',
+    url: '/home',
   },
   {
     icon: 'fa-solid fa-ban',
-    name: 'Section D',
-    url: '#',
+    name: 'Contato',
+    url: '/home',
   },
 ];
