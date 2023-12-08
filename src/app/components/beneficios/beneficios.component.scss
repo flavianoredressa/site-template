@@ -1,0 +1,64 @@
+.benefits {
+  background: #00123e;
+}
+
+.benefits h1 {
+  font-size: 48px;
+  color: #eeeded;
+  font-weight: 700;
+}
+
+.benefits .person {
+  width: 100%;
+}
+
+.benefits .card-benefits {
+  width: 260px;
+  height: 230px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  background: #3c559366;
+  padding: 2.375rem 2.625rem;
+}
+
+.benefits .card-benefits p {
+  font-size: 26px;
+  color: #eeeded;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.39px;
+}
+
+.benefits .card-benefits img {
+  max-width: 75px;
+  margin-bottom: 2.625rem;
+}
+
+.place-slfend {
+  place-self: end;
+}
+
+.flex-dcolumn {
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .benefits h1 {
+    font-size: 32px;
+    margin-bottom: 2.75rem;
+  }
+
+  .benefits .card-benefits {
+    width: 279px;
+    height: 226px;
+  }
+
+  .benefits .card-benefits p {
+    font-size: 22px;
+  }
+
+  .benefits .person {
+    margin-bottom: 75px;
+  }
+}
