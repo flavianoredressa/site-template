@@ -81,7 +81,89 @@ ul {
 
 .new-price {
   font-size: 80px;
+
   span {
     font-size: 48px;
   }
+}
+
+
+// swiper
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  background: transparent;
+
+  &::part(bullet),
+  &::part(bullet-active) {
+    background: white;
+  }
+}
+
+swiper-slide {
+  padding: 32px;
+}
+
+.carousel-container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 650px) {
+  .shape, .second-plan {
+    width: 300px !important;
+    height: 545px !important;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    li {
+      margin-bottom: 16px !important;
+    }
+  }
+
+  .btn-best {
+    left: 58px;
+    top: -26px;
+    font-size: 16px;
+    width: 179.827px;
+    height: 48.312px;
+  }
+
+  .sign {
+    left: 58px;
+    height: 46.97px;
+    font-size: 24px;
+    width: 179.827px;
+  }
+
+  .new-price {
+    font-size: 52px !important;
+    span {
+      font-size: 32px;
+    }
+  }
+
+  .mob-32 {
+    margin-bottom: 32px;
+  }
+}
+
+swiper-container[_ngcontent-ng-c1064411550]::part(bullet),
+swiper-container[_ngcontent-ng-c1064411550]::part(bullet-active) {
+  background-color: #16F9B9;
 }
