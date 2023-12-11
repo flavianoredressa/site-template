@@ -1,0 +1,87 @@
+.container-max-width {
+  color: #FFF;
+  background-color: #1B1C2D;
+}
+
+.gap-78 {
+  gap: 78px;
+}
+
+.shape {
+  width: 440px;
+  height: 740px;
+  border-radius: 8px;
+}
+
+.best-plan {
+  background: rgba(255, 255, 255, 0.00);
+  border: 4px solid var(--VERDE-AGUA, #16F9B9);
+}
+
+.second-plan {
+  height: 725px !important;
+  border: 4px solid var(--Branco, #FFF);
+  background: rgba(255, 255, 255, 0.00);
+}
+
+.btn-best {
+  left: 86px;
+  top: -36px;
+  width: 268px;
+  height: 72px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #212236;
+  border-radius: 8px;
+  background: #16F9B9;
+  text-transform: uppercase;
+}
+
+.txt-green {
+  color: #16F9B9;
+}
+
+.bg-green {
+  background: #16F9B9;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mt-76 {
+  margin-top: 72px;
+}
+
+.mb-96 {
+  margin-bottom: 96px;
+}
+
+.sign {
+  left: 86px;
+  width: 268px;
+  height: 70px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #212236;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 56px;
+}
+
+.no-color {
+  color: transparent;
+}
+
+.last-price {
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: 80px;
+  span {
+    font-size: 48px;
+  }
+}
